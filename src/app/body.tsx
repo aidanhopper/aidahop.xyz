@@ -1,7 +1,7 @@
 export default function Body() {
   return (
     <>
-      <div className="relative bg-gray-100 isolate overflow-hidden py-24 sm:py-32 min-h-screen text-green-800">
+      <div className="relative bg-gray-100 isolate overflow-hidden py-24 sm:py-32 min-h-screen text-green-700">
         <h1 className="text-center flex justify-center items-center flex-col opacity-100 text-7xl">
           <span className="italic">who&apos;s</span>
           <div className="font-extrabold">
