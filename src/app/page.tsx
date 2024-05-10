@@ -1,7 +1,3 @@
-import Body from "./body"
-import Navbar from "./navbar"
-import About from "./about"
-
 export default function Home() {
 
   const navbar_button_style = "text-2xl p-2";
