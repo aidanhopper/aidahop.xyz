@@ -21,7 +21,7 @@ export default function Home() {
       </div>
       <div className="animate-slidein h-screen flex justify-center items-center text-7xl">
         <span className="flex-col text-center">
-          <span className="italic">who's</span>
+          <span className="italic">who&apos;s</span>
           <br/>
           <span className={name_button_style}>a</span>
           <span className={name_button_style}>i</span>
