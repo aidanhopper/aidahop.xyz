@@ -37,7 +37,7 @@ const Home = () => {
       <div className="h-screen container m-auto flex">
         <div className="flex-auto m-auto w-60 p-10 justify-center border border-black text-2xl">
           Im currently a student in university learning webdev other things.<br/>
-          Check out some of my projects! ---> 
+          Check out some of my projects! ---&gt;
         </div>
         <div className="flex-auto m-auto p-10 justify-center border border-black text-7xl">
           PROJECTS STUFF
