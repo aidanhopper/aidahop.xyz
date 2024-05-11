@@ -57,7 +57,7 @@ const Background = () => {
   // which will correspond with width*rand and height*rand
   //let objects: Array<Array<number>> = [];
   
-  const [objects, setObjects] = useState([])
+  const [objects, setObjects] = useState([] as {x: number, y: number}[])
 
   useEffect(() => {
 
