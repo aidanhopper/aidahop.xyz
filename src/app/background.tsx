@@ -22,7 +22,7 @@ const Background = () => {
     });
   }
 
-  let updateMousePos = (x, y) => {
+  let updateMousePos = (x: number, y: number) => {
     setMousePos({
       x: x,
       y: y,
