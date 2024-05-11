@@ -34,37 +34,36 @@ const Background = () => {
   useEffect(() => {
 
     const canvas = canvasRef.current;
+    if (canvas === null) 
+      return;
 
-    if (canvas !== null) {
-
-        const context = canvas.getContext('2d') as unknown as CanvasRenderingContext2D;
-
-        if (context !== null) {
-        window.addEventListener("mousemove", (event) => {
-          const rect = canvas.getBoundingClientRect();
-          updateMousePos(event.clientX - rect.left, event.clientY -rect.top);
-        });
-
-        window.addEventListener('resize', updateWindowSize);
-        updateWindowSize();
+    const context = canvas.getContext('2d') as unknown as CanvasRenderingContext2D;
+    if (context === null)
+      return;
 
 
-        context.clearRect(0, 0, canvas.width, canvas.height);
+    window.addEventListener("mousemove", (event) => {
+      const rect = canvas.getBoundingClientRect();
+      updateMousePos(event.clientX - rect.left, event.clientY -rect.top);
+    });
 
-        context.fillStyle = '#8FEED0';
-        context.strokeStyle = '#8FEED0';
+    window.addEventListener('resize', updateWindowSize);
+    updateWindowSize();
 
-        context.moveTo(0, 0);
-        context.lineTo(windowSize.width, windowSize.height);
 
-        context.beginPath();
-        context.arc(mousePos.x, mousePos.y, 5, 0, 2*3.1415);
-        context.fill();
-        context.stroke();
+    context.clearRect(0, 0, canvas.width, canvas.height);
 
-      }
+    context.fillStyle = '#8FEED0';
+    context.strokeStyle = '#8FEED0';
 
-    }
+    context.moveTo(0, 0);
+    context.lineTo(windowSize.width, windowSize.height);
+
+    context.beginPath();
+    context.arc(mousePos.x, mousePos.y, 5, 0, 2*3.1415);
+    context.fill();
+    context.stroke();
+
 
   }, [windowSize.width, windowSize.height, mousePos.x, mousePos.y]);
 
