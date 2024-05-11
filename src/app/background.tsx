@@ -33,17 +33,17 @@ const Background = () => {
 
   useEffect(() => {
 
-    window.addEventListener('resize', updateWindowSize);
+    const canvas = canvasRef.current;
+    const context = canvas.getContext('2d');
 
     window.addEventListener("mousemove", (event) => {
       const rect = canvas.getBoundingClientRect();
       updateMousePos(event.clientX - rect.left, event.clientY -rect.top);
     });
 
+    window.addEventListener('resize', updateWindowSize);
     updateWindowSize();
 
-    const canvas = canvasRef.current;
-    const context = canvas.getContext('2d');
 
     context.clearRect(0, 0, canvas.width, canvas.height);
 
@@ -57,8 +57,6 @@ const Background = () => {
     context.arc(mousePos.x, mousePos.y, 5, 0, 2*3.1415);
     context.fill();
     context.stroke();
-
-
 
   }, [windowSize.width, windowSize.height, mousePos.x, mousePos.y]);
 
