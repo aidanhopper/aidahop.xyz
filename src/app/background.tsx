@@ -34,29 +34,34 @@ const Background = () => {
   useEffect(() => {
 
     const canvas = canvasRef.current;
-    const context = canvas.getContext('2d');
 
-    window.addEventListener("mousemove", (event) => {
-      const rect = canvas.getBoundingClientRect();
-      updateMousePos(event.clientX - rect.left, event.clientY -rect.top);
-    });
+    if (canvas !== null) {
 
-    window.addEventListener('resize', updateWindowSize);
-    updateWindowSize();
+      const context = canvas.getContext('2d');
+
+      window.addEventListener("mousemove", (event) => {
+        const rect = canvas.getBoundingClientRect();
+        updateMousePos(event.clientX - rect.left, event.clientY -rect.top);
+      });
+
+      window.addEventListener('resize', updateWindowSize);
+      updateWindowSize();
 
 
-    context.clearRect(0, 0, canvas.width, canvas.height);
+      context.clearRect(0, 0, canvas.width, canvas.height);
 
-    context.fillStyle = '#8FEED0';
-    context.strokeStyle = '#8FEED0';
+      context.fillStyle = '#8FEED0';
+      context.strokeStyle = '#8FEED0';
 
-    context.moveTo(0, 0);
-    context.lineTo(windowSize.width, windowSize.height);
+      context.moveTo(0, 0);
+      context.lineTo(windowSize.width, windowSize.height);
 
-    context.beginPath();
-    context.arc(mousePos.x, mousePos.y, 5, 0, 2*3.1415);
-    context.fill();
-    context.stroke();
+      context.beginPath();
+      context.arc(mousePos.x, mousePos.y, 5, 0, 2*3.1415);
+      context.fill();
+      context.stroke();
+
+    }
 
   }, [windowSize.width, windowSize.height, mousePos.x, mousePos.y]);
 
