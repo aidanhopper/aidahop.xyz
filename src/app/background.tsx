@@ -6,8 +6,8 @@ const Background = () => {
   //const c = document.getElementById('mycanvas');
   
   const [windowSize, setWindowSize] = useState({
-    width: undefined,
-    height: undefined,
+    width: 0,
+    height: 0,
   });
 
   const [mousePos, setMousePos] = useState({
