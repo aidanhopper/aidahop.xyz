@@ -57,11 +57,11 @@ const Background = () => {
   // which will correspond with width*rand and height*rand
   //let objects: Array<Array<number>> = [];
   
-  const [objects, setObjects] = useState([] as {x: number, y: number}[])
+  const [objects, setObjects] = useState([] as {x: number, y: number}[]);
 
   useEffect(() => {
 
-    let tmp: {x: number, y: number}[] = []
+    let tmp: {x: number, y: number}[] = [];
 
     for (let i = 0; i < 10; i++) {
       tmp.push({
@@ -98,10 +98,10 @@ const Background = () => {
     context.clearRect(0, 0, canvas.width, canvas.height);
 
     objects.forEach((elem1) => {
-      circle(context, canvas.width * elem1.x, canvas.height * elem1.y, 3, '#0');
+      circle(context, canvas.width * elem1.x, canvas.height * elem1.y, 3, '#FCBDF9');
       objects.forEach((elem2) => {
         line(context, canvas.width * elem1.x, canvas.height * elem1.y,
-          canvas.width * elem2.x, canvas.height * elem2.y, '#0')
+          canvas.width * elem2.x, canvas.height * elem2.y, '#FCBDF9');
       })
     })
 
