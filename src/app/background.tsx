@@ -66,7 +66,7 @@ const Background = () => {
       y: number;
     }
 
-    let tmp: Array<> = []
+    let tmp: Array<Point> = []
 
     for (let i = 0; i < 10; i++) {
       tmp.push({
