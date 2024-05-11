@@ -29,11 +29,11 @@ const Background = () => {
     });
   }
 
-  const canvasRef = useRef(null);
+  const canvasRef = useRef<HTMLCanvasElement>(null);
 
   useEffect(() => {
 
-    const canvas = canvasRef.current as HTMLCanvasElement;
+    const canvas = canvasRef.current;
 
     if (canvas !== null) {
 
