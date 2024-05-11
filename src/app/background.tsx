@@ -61,12 +61,7 @@ const Background = () => {
 
   useEffect(() => {
 
-    interface Point {
-      x: number;
-      y: number;
-    }
-
-    let tmp: Array<Point> = []
+    let tmp: Array<{x: number, y: number}> = []
 
     for (let i = 0; i < 10; i++) {
       tmp.push({
