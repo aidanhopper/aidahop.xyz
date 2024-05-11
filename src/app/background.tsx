@@ -60,14 +60,23 @@ const Background = () => {
   const [objects, setObjects] = useState([])
 
   useEffect(() => {
-    var tmp = []
+
+    interface Point {
+      x: number;
+      y: number;
+    }
+
+    let tmp: Array<> = []
+
     for (let i = 0; i < 10; i++) {
       tmp.push({
         x: Math.random(), 
         y: Math.random(),
       });
     }
+
     setObjects(() => {return tmp});
+
   }, []);
 
   
@@ -94,9 +103,10 @@ const Background = () => {
     context.clearRect(0, 0, canvas.width, canvas.height);
 
     objects.forEach((elem1) => {
-      circle(context, canvas.width * elem1.x, canvas.height * elem1.y, 2, '#0');
+      circle(context, canvas.width * elem1.x, canvas.height * elem1.y, 3, '#0');
       objects.forEach((elem2) => {
-        line(context, canvas.width * elem1.x, canvas.height * elem1.y, canvas.width * elem2.x, canvas.height * elem2.y, '#0')
+        line(context, canvas.width * elem1.x, canvas.height * elem1.y,
+          canvas.width * elem2.x, canvas.height * elem2.y, '#0')
       })
     })
 
