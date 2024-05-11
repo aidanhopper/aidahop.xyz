@@ -8,8 +8,8 @@ const About = () => {
             </div>
             <div className="animate-slidein ms-10 flex-auto text-xl text-3xl text-green-600">
               Im a 21 year old student studying computer science based in Washington.
-              I have a passion for all things computers such as linux and coding.
-              I also only started learning css last night :)))
+              I make horrible websites :)
+
               <br/>
               <br/>
               Contact me at <b>aidanhop1@gmail.com</b>.
