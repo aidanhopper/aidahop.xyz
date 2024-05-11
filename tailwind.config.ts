@@ -10,6 +10,9 @@ const config: Config = {
   ],
   theme: {
     extend: {
+      dropShadow: {
+        'greet': '0px 0px 35px rgba(255, 0, 0, 1)'
+      },
       keyframes: {
         slidein: {
           from: {
