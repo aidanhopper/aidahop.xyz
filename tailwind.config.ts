@@ -21,9 +21,20 @@ const config: Config = {
             transform: "translateY(0)"
           },
         },
+        slideintop: {
+          from: {
+            opacity: "0",
+            transform: "translateY(50px)",
+          },
+          to: {
+            opacity: "1",
+            transform: "translateY(0)"
+          },
+        },
       },
       animation: {
-        slidein: "slidein 500ms ease forwards"
+        slidein: "extend 2s 1, slidein 300ms ease-in-out forwards",
+        slideintop: "slideintop 200ms ease forwards",
       },
     },
   },
