@@ -33,11 +33,11 @@ const Background = () => {
 
   useEffect(() => {
 
-    const canvas = canvasRef.current;
+    const canvas = canvasRef.current as HTMLCanvasElement;
 
     if (canvas !== null) {
 
-      const context = canvas?.getContext('2d');
+      const context = canvas.getContext('2d');
 
       window.addEventListener("mousemove", (event) => {
         const rect = canvas.getBoundingClientRect();
