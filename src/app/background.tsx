@@ -61,7 +61,7 @@ const Background = () => {
 
   useEffect(() => {
 
-    let tmp: Array<{x: number, y: number}> = []
+    let tmp: {x: number, y: number}[] = []
 
     for (let i = 0; i < 10; i++) {
       tmp.push({
