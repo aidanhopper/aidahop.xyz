@@ -23,7 +23,7 @@ const config: Config = {
         },
       },
       animation: {
-        slidein: "slidein 1s ease 300ms"
+        slidein: "slidein 500ms ease forwards"
       },
     },
   },
