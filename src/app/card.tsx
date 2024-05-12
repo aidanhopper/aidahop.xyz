@@ -3,7 +3,7 @@ interface CardProps {
   url: string;
 }
 
-const Card = ({ name, url } : { string, string }) => {
+const Card = ({ name, url } : CardProps) => {
 
 
   const classes = `
