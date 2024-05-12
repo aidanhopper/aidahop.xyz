@@ -124,21 +124,21 @@ const Home = () => {
           </div>
         </Section>
         <Section name="PROJECTS">
-          <Project name="Nixconf"
-                   link="https://github.com/aidanhopper/nixconf"
-                   tags="Linux,Nix,Bash">
+          <Project name={"Nixconf" as string}
+                   link={"https://github.com/aidanhopper/nixconf" as string}
+                   tags={"Linux,Nix,Bash" as string}>
             Stores my configurations for all my machines in a single git repository
             built with NixOS and the Nix language.
           </Project>
-          <Project name="aidanhopper.dev"
-                   link="https://github.com/aidanhopper/aidanhopper.dev"
-                   tags="HTML,Tailwind,React,NextJS"
+          <Project name={"aidanhopper.dev" as string}
+                   link={"https://github.com/aidanhopper/aidanhopper.dev" as string}
+                   tags={"HTML,Tailwind,React,NextJS" as string}
                    className="mt-10">
             My personal portfiolio website. Designed to be easy to iterate on.
           </Project>
-          <Project name="3D Software Renderer"
-                   link="https://github.com/aidanhopper/3drasteriser"
-                   tags="C,Linear Algebra,SDL2"
+          <Project name={"3D Software Renderer" as string}
+                   link={"https://github.com/aidanhopper/3drasteriser" as string}
+                   tags={"C,Linear Algebra,SDL2" as string}
                    className="mt-10">
             A 3D software renderer built from scratch in C. I wrote every drawing 
             algorithm myself with SDL2 handling drawing a pixel to the screen. Used
