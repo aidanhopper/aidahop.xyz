@@ -22,9 +22,27 @@ const config: Config = {
             transform: "rotate(10deg) translateX(5px)",
           },
         },
+        slidein: {
+          '0%': {
+            transform: "translateY(100px)"
+          },
+          '100%': {
+            transform: "translateY(0px)"
+          }
+        },
+        slideout: {
+          '0%': {
+            transform: "translateY(0px)"
+          },
+          '100%': {
+            transform: "translateY(100px)"
+          }
+        },
       },
       animation: {
         wave: "wave 0.80s ease-out",
+        slidein: "slidein .1s ease-in-out forwards",
+        slideout: "slideout .1s ease-in-out forwards"
       },
     },
   },

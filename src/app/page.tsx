@@ -5,6 +5,7 @@ import ScrollToTopButton from './components/scrolltotopbutton'
 const Home = () => {
   return (
     <div className="bg-white text-gray-700 text-4xl leading-loose font-sans overflow-hidden">
+      <ScrollToTopButton icon="&#128070;"/>
       <div className="flex flex-col m-auto container">
         <div className="flex h-screen flex-col mx-40 w-[700px]">
           <div className="flex-auto content-end">
@@ -29,8 +30,6 @@ const Home = () => {
               </span>
           </div>
         </div>
-        <ScrollToTopButton icon="asdf">
-        </ScrollToTopButton>
         <Section name="BACKGROUND">
           I&apos;m currently studying Computer Science at at 
           &nbsp;
