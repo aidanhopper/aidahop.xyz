@@ -1,3 +1,5 @@
+import Section from './components/section'
+
 const Home = () => {
   return (
     <div className="bg-white text-gray-700 text-4xl leading-loose font-sans overflow-hidden">
@@ -30,7 +32,7 @@ const Home = () => {
             BACKGROUND
           </div>
           <div className="flex-auto w-[900px] px-20 text-base">
-            I&apos;m currently studying Computer Science at at 
+            I&apos;'m currently studying Computer Science at at 
             &nbsp;
             <a className="font-bold" href="https://wsu.edu" target="_blank">
               Washington State University 
@@ -53,6 +55,10 @@ const Home = () => {
           </div>
         </div>
       </div>
+      <Section name={"NAME" as string}>
+        asdf
+        asdfoaiksdjfkasdjf;l
+      </Section>
     </div>
   );
 }
