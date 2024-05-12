@@ -27,38 +27,63 @@ const Home = () => {
               </span>
           </div>
         </div>
-        <div className="flex-auto flex flex-row m-auto mt-20 mb-20">
-          <div className="flex-auto w-[40%] text-right text-lg font-bold text-blue-400">
-            BACKGROUND
+        <Section name={"BACKGROUND" as string}>
+          I&apos;m currently studying Computer Science at at 
+          &nbsp;
+          <a className="font-bold hover:text-blue-400 duration-100" href="https://wsu.edu" target="_blank">
+            Washington State University 
+          </a>
+          &nbsp;
+          while working as an Application Engineering Intern
+          at 
+          &nbsp;
+          <a className="font-bold hover:text-blue-400 duration-100" href="https://selinc.com" target="_blank">
+            Schweitzer Engineering Laboratories
+          </a>
+          &nbsp;
+          building software to
+          automate hardware testing.
+          <br/>
+          <br/>
+          My favorite aspect of software engineering is solving interesting
+          problems and working between the gaps of hardware and software.
+          I also enjoy creating interactive frontends with fun designs.
+        </Section>
+        <Section name={"SKILLS" as string}>
+          <div className="flex">
+            <div className="flex-auto">
+              <b>LANGUAGES</b> <br/>
+              C/C++ <br/>
+              JavaScript <br/>
+              TypeScript <br/>
+              Python <br/>
+              Bash <br/>
+              HTML <br/>
+              CSS <br/>
+            </div>
+            <div className="flex-auto">
+              <b>FRAMEWORKS</b> <br/>
+              React <br/>
+              NextJS <br/>
+              Node <br/>
+            </div>
+            <div className="flex-auto">
+              <b>TOOLS</b> <br/>
+              Git <br/>
+              SSH <br/>
+              Virsh <br/>
+              Devtools <br/>
+            </div>
+            <div className="flex-auto">
+              <b>TECHNOLOGIES</b> <br/>
+              React <br/>
+              NextJS <br/>
+              Node <br/>
+              Libvirt <br/>
+            </div>
           </div>
-          <div className="flex-auto w-[900px] px-20 text-base">
-            I&apos;m currently studying Computer Science at at 
-            &nbsp;
-            <a className="font-bold" href="https://wsu.edu" target="_blank">
-              Washington State University 
-            </a>
-            &nbsp;
-            while working as an Application Engineering Intern
-            at 
-            &nbsp;
-            <a className="font-bold" href="https://selinc.com" target="_blank">
-              Schweitzer Engineering Laboratories
-            </a>
-            &nbsp;
-            building software to
-            automate hardware testing.
-            <br/>
-            <br/>
-            My favorite aspect of software engineering is solving interesting
-            problems and working between the gaps of hardware and software.
-            I also enjoy creating interactive frontends with fun designs.
-          </div>
-        </div>
+        </Section>
       </div>
-      <Section name={"NAME" as string}>
-        asdf
-        asdfoaiksdjfkasdjf;l
-      </Section>
     </div>
   );
 }
