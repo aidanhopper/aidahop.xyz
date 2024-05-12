@@ -30,14 +30,7 @@ const About = () => {
             Projects &nbsp; :) (pls check the github)
           </div>
           <div className="flex text-right flex-auto flex-wrap justify-center">
-            <Card name={"THIS WEBSITE!"} url={"aidahoper.dev"} />
-            <Card name={"asdf"} url={"nixconf"} />
-            <Card name={"asdf"} url={"nixconf"} />
-            <Card name={"asdf"} url={"nixconf"} />
-            <Card name={"asdf"} url={"nixconf"} />
-            <Card name={"asdf"} url={"nixconf"} />
-            <Card name={"asdf"} url={"nixconf"} />
-            <Card name={"asdf"} url={"nixconf"} />
+            <Card name={"asdf" as string} url={"nixconf" as string} />
           </div>
         </div>
       </div>
