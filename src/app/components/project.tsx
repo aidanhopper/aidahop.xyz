@@ -4,11 +4,16 @@ type Props = {
   name: string,
   link: string,
   tags: string,
-  className: string,
+  className?: string,
 }
 
 
 const Project = (props: React.PropsWithChildren<Props>) => {
+
+  let className = "";
+  if (props.className !== undefined)
+    className = props.className;
+
 
   const tags = props.tags.split(",");
 
@@ -23,7 +28,7 @@ const Project = (props: React.PropsWithChildren<Props>) => {
   }
 
   return (
-    <div className={props.className}>
+    <div className={className}>
       <a href={props.link} className="font-bold group" target="_blank">
         {props.name} &nbsp; 
         <span className="text-blue-400 group-hover:translate-x-2 ease-out duration-100 inline-block">
