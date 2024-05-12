@@ -4,10 +4,10 @@ import ScrollToTopButton from './components/scrolltotopbutton'
 
 const Home = () => {
   return (
-    <div className="bg-white text-gray-700 text-4xl leading-loose font-sans overflow-hidden">
+    <div className="bg-white text-gray-700 text-3xl lg:text-4xl leading-loose font-sans overflow-hidden">
       <ScrollToTopButton icon="&#128070;"/>
       <div className="flex flex-col m-auto container">
-        <div className="flex-auto flex flex-row">
+        <div className="flex-auto flex flex-row p-10 lg:p-0">
           <div className="flex-auto"/>
           <div className="flex-auto"/>
           <div className="flex flex-auto h-screen flex-col w-[700px]">
@@ -159,14 +159,14 @@ const Home = () => {
           </Project>
         </Section>
       </div>
-      <div className="flex m-auto mx-20 mb-10 mt-[150px]">
-        <div className="flex-auto text-base group font-bold">
+      <div className="flex m-auto mx-3 lg:mx-20 mb-20 lg:mb-10 mt-[150px]">
+        <div className="flex-auto hidden lg:block text-base group font-bold">
           Built by Aidan Hopper 2024 &nbsp; 
           <span className="">
             &#128640;
           </span>
         </div>
-        <div className="text-right flex-auto text-base group text-blue-400 font-bold">
+        <div className="text-center w-full lg:text-right flex-auto text-base group text-blue-400 font-bold">
           <a href="https://github.com/aidanhopper" 
              target="_blank" 
              className="m-4 hover:border-b-2 duration-75 border-blue-400">
