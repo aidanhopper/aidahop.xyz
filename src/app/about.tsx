@@ -1,6 +1,10 @@
 import Card from './card'
 
 const About = () => {
+
+  let pname: string = "aidanhopper.dev";
+  let purl: string = "aidanhopper.dev";
+
   return (
       <div className="bg-blue-100 flex flex-col py-[200px]">
         <div className="container m-auto flex">
@@ -30,7 +34,7 @@ const About = () => {
             Projects &nbsp; :) (pls check the github)
           </div>
           <div className="flex text-right flex-auto flex-wrap justify-center">
-            <Card name={"asdf" as string} url={"nixconf" as string} />
+            <Card name={pname} url={purl} />
           </div>
         </div>
       </div>
