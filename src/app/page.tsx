@@ -7,28 +7,40 @@ const Home = () => {
     <div className="bg-white text-gray-700 text-4xl leading-loose font-sans overflow-hidden">
       <ScrollToTopButton icon="&#128070;"/>
       <div className="flex flex-col m-auto container">
-        <div className="flex h-screen flex-col mx-40 w-[700px]">
-          <div className="flex-auto content-end">
-            Hello! &nbsp;
-            <span className="hover:animate-wave origin-bottom inline-block">
-              &#128075;
-            </span>
-          </div>
-          <div className="flex-auto content-center">
-            I&apos;m <b>Aidan Hopper</b>, a design-minded student
-            focused on learning new things and building cool projects. &#128187;
-          </div>
-          <div className="flex-auto content-start text-xl">
-            Get in touch &#128073; &nbsp;
-            <span className="relative group p-1 ease-in-out">
-              <a className="relative inline-block z-10 group-hover:text-white transition duration-100"
-                href="mailto:aidanhop1@gmail.com">
-                aidanhop1@gmail.com
-              </a>
-              <span className="absolute bg-blue-400 left-0 -bottom-1 w-full
-                h-1 group-hover:h-[110%] duration-100 group-hover:transition-all"></span>
+        <div className="flex-auto flex flex-row">
+          <div className="flex-auto"/>
+          <div className="flex-auto"/>
+          <div className="flex flex-auto h-screen flex-col w-[700px]">
+            <div className="flex-auto content-end">
+              Hello! &nbsp;
+              <span className="hover:animate-wave origin-bottom inline-block">
+                &#128075;
               </span>
+            </div>
+            <div className="flex-auto content-center">
+              I&apos;m <b>Aidan Hopper</b>, a design-minded student
+              focused on learning new things and building cool projects. &#128187;
+            </div>
+            <div className="flex-auto content-start text-xl">
+              Get in touch &#128073; &nbsp;
+              <span className="relative group p-1 ease-in-out">
+                <a className="relative inline-block z-10 group-hover:text-white transition duration-100"
+                  href="mailto:aidanhop1@gmail.com">
+                  aidanhop1@gmail.com
+                </a>
+                <span className="absolute bg-blue-400 left-0 -bottom-1 w-full
+                  h-1 group-hover:h-[110%] duration-100 group-hover:transition-all"></span>
+                </span>
+            </div>
           </div>
+          <div className="flex-auto"/>
+          <div className="flex-auto"/>
+          <div className="flex-auto"/>
+          <div className="flex-auto"/>
+          <div className="flex-auto"/>
+          <div className="flex-auto"/>
+          <div className="flex-auto"/>
+          <div className="flex-auto"/>
         </div>
         <Section name="BACKGROUND">
           I&apos;m currently studying Computer Science at at 
