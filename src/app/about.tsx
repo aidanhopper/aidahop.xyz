@@ -7,7 +7,7 @@ const About = () => {
 
   const count: number = 4;
 
-  const getCards = (count) => {
+  const getCards = (count: number) => {
     const arr = [];
     for (let i = 0; i < count; i++)
       arr.push(
