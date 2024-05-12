@@ -111,7 +111,7 @@ const Background = () => {
 
 
   return (
-    <canvas className="absolute z-[0]" ref={canvasRef} width={windowSize.width} height={windowSize.height}></canvas>
+    <canvas className="absolute z-[0] animate-slideintop" ref={canvasRef} width={windowSize.width} height={windowSize.height}></canvas>
   );
 }
 

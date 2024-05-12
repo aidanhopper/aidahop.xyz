@@ -10,34 +10,21 @@ const config: Config = {
   ],
   theme: {
     extend: {
-      dropShadow: {
-        'greet': '0px 0px 35px rgba(255, 0, 0, 1)'
-      },
       keyframes: {
-        slidein: {
-          from: {
-            opacity: "0",
-            transform: "translateY(-10px)",
+        wave: {
+          '0%, 100%' : {
+            transform: "rotate(0) translate(0)",
           },
-          to: {
-            opacity: "1",
-            transform: "translateY(0)"
+          '20%, 60%': {
+            transform: "rotate(-10deg) translateX(-5px)",
           },
-        },
-        slideintop: {
-          from: {
-            opacity: "0",
-            transform: "translateY(50px)",
-          },
-          to: {
-            opacity: "1",
-            transform: "translateY(0)"
+          '40%, 80%': {
+            transform: "rotate(10deg) translateX(5px)",
           },
         },
       },
       animation: {
-        slidein: "slidein 300ms ease-in-out 150ms forwards",
-        slideintop: "slideintop 200ms ease forwards",
+        wave: "wave 0.70s ease-in-out",
       },
     },
   },
