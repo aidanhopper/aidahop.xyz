@@ -1,4 +1,9 @@
-const Card = ({ name, url }) => {
+interface CardProps {
+  name: string;
+  url: string;
+}
+
+const Card = ({ name, url } : { string, string }) => {
 
 
   const classes = `
