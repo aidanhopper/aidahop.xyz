@@ -24,7 +24,7 @@ const config: Config = {
         },
       },
       animation: {
-        wave: "wave 0.70s ease-in-out",
+        wave: "wave 0.80s ease-out",
       },
     },
   },
