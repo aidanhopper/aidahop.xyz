@@ -2,8 +2,21 @@ import Card from './card'
 
 const About = () => {
 
-  let pname: string = "aidanhopper.dev";
-  let purl: string = "aidanhopper.dev";
+  const pname: string = "aidanhopper.dev";
+  const purl: string = "aidanhopper.dev";
+
+  const count = 4;
+
+  const getCards = (count) => {
+    const arr = [];
+    for (let i = 0; i < count; i++)
+      arr.push(
+      <div key={i}>
+        <Card name={pname} url={purl} />
+      </div>
+    );
+    return arr;
+  }
 
   return (
       <div className="bg-blue-100 flex flex-col py-[200px]">
@@ -34,7 +47,7 @@ const About = () => {
             Projects &nbsp; :) (pls check the github)
           </div>
           <div className="flex text-right flex-auto flex-wrap justify-center">
-            <Card name={pname} url={purl} />
+            {getCards(count)}
           </div>
         </div>
       </div>

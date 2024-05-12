@@ -2,6 +2,7 @@ import Navbar from './navbar'
 import Landing from './landing'
 import About from './about'
 import Background from './background'
+import Footer from './footer'
 
 const Home = () => {
   return (
@@ -10,6 +11,7 @@ const Home = () => {
       <Navbar/>
       <Landing/>
       <About/>
+      <Footer/>
     </div>
   );
 }
