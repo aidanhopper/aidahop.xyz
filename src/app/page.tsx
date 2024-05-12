@@ -83,6 +83,28 @@ const Home = () => {
             </div>
           </div>
         </Section>
+        <Section name={"EXPERIENCE" as string}>
+          <div className="flex flex-col">
+            <div className="flex flex-auto">
+            <div className="flex-auto">
+                <b>Schweitzer Engineerng Laboratories</b> <br/>
+                Application Engineering Intern 
+              </div>
+              <div className="flex-auto text-right font-mono text-sm">
+                Aug 2023 - Present 
+              </div>
+            </div>
+            <div className="flex flex-auto my-7">
+              <div className="flex-auto">
+                <b>Washington State University</b> <br/>
+                Student 
+              </div>
+              <div className="flex-auto text-right font-mono text-sm">
+                Aug 2022 - Present 
+              </div>
+            </div>
+          </div>
+        </Section>
       </div>
     </div>
   );
