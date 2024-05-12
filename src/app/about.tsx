@@ -5,7 +5,7 @@ const About = () => {
   const pname: string = "aidanhopper.dev";
   const purl: string = "aidanhopper.dev";
 
-  const count = 4;
+  const count: number = 4;
 
   const getCards = (count) => {
     const arr = [];
