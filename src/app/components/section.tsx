@@ -1,4 +1,6 @@
-import React from 'react';
+'use client'
+
+import React, { useRef, useEffect, useState } from 'react';
 
 type Props = {
   name: string,

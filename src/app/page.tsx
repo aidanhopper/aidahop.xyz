@@ -16,7 +16,7 @@ const Home = () => {
           </div>
           <div className="flex-auto content-center">
             I&apos;m <b>Aidan Hopper</b>, a design-minded student
-            focused on learning new things and building cool projects.
+            focused on learning new things and building cool projects. &#128187;
           </div>
           <div className="flex-auto content-start text-xl">
             Get in touch &#128073; &nbsp;
