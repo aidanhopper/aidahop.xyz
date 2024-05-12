@@ -10,7 +10,7 @@ const Home = () => {
             </span>
           </div>
           <div className="flex-auto content-center">
-            I'm <b>Aidan Hopper</b>, a design-minded full-stack software engineer
+            I&apos;m <b>Aidan Hopper</b>, a design-minded full-stack software engineer
             focused on building beautiful interfaces & quality experiences.
           </div>
           <div className="flex-auto content-start text-xl">
@@ -30,7 +30,7 @@ const Home = () => {
             BACKGROUND
           </div>
           <div className="flex-auto w-[900px] px-20 text-base">
-            I'm currently studying Computer Science at at 
+            I&apos;m currently studying Computer Science at at 
             &nbsp;
             <a className="font-bold" href="https://wsu.edu" target="_blank">
               Washington State University 
