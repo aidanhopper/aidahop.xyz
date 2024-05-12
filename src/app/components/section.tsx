@@ -1,8 +1,10 @@
+import React from 'react';
+
 type Props = {
   name: string,
 }
 
-const Section = (props: PropsWithChildren<Props>) => {
+const Section = (props: React.PropsWithChildren<Props>) => {
   return (
     <div>
       {props.name}
