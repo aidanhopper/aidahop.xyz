@@ -6,7 +6,7 @@ const Landing = () => {
       <div className="h-screen flex flex-col">
         <div className="flex-auto"/> {/* need dummy boxes to center on screen */}
         <div className="flex-auto"/>
-        <div className="drop-shadow-[3px_3px_1px_rgba(0,0,0,0.30)] flex-auto m-auto animate-slidein text-center text-9xl">
+        <div className="drop-shadow-[3px_3px_1px_rgba(0,0,0,0.30)] flex-auto m-auto opacity-0 animate-slidein text-center text-9xl">
           <div className="italic m-auto">who&apos;s</div>
           <div className="m-auto">
             <span className={name_button_style}>a</span>
