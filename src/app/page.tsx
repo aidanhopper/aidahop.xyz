@@ -124,9 +124,9 @@ const Home = () => {
           </div>
         </Section>
         <Section name="PROJECTS">
-          <Project name={"Nixconf" as string}
-                   link={"https://github.com/aidanhopper/nixconf" as string}
-                   tags={"Linux,Nix,Bash"}>
+          <Project name="Nixconf"
+                   link="https://github.com/aidanhopper/nixconf"
+                   tags="Linux,Nix,Bash">
             Stores my configurations for all my machines in a single git repository
             built with NixOS and the Nix language.
           </Project>
