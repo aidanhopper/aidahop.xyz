@@ -1,4 +1,8 @@
-const ScrollToTopButton = ( { icon } : { string } ) => {
+type Props = {
+  icon: string;
+}
+
+const ScrollToTopButton = ( props: Props ) => {
   return (
     <div>
     </div> 
