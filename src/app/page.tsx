@@ -4,7 +4,7 @@ import ScrollToTopButton from './components/scrolltotopbutton'
 
 const Home = () => {
   return (
-    <div className="bg-white text-gray-700 text-3xl lg:text-4xl leading-loose font-sans overflow-hidden">
+    <div className="bg-white text-gray-700 text-xl md:text-4xl leading-loose font-sans overflow-hidden">
       <ScrollToTopButton icon="&#128070;"/>
       <div className="flex flex-col m-auto container">
         <div className="flex-auto flex flex-row p-10 lg:p-0">
