@@ -13,7 +13,7 @@ const Section = (props: React.PropsWithChildren<Props>) => {
       <div className="flex-auto p-3 lg:p-0 lg:w-1/5 lg:text-right text-lg font-bold text-blue-400">
         {props.name}
       </div>
-      <div className="flex-auto lg:w-1/3 p-3 lg:pl-20 text-base">
+      <div className="flex-auto lg:w-1/3 p-3 lg:p-0 lg:pl-20 text-base">
         {props.children}
       </div>
       <div className="flex-auto"/>
