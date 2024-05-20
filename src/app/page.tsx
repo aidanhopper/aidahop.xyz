@@ -142,12 +142,12 @@ const Home = () => {
             built with NixOS and the Nix language.
           </Project>
           <Project name={"Hoot" as string}
-                   link={"https://github.com/aidanhopper/hoot" as string}
+                   link={"https://hoot.aidahop.xyz" as string}
                    tags={"HTML,Tailwind,React,NextJS,Supabase" as string}
                    className="mt-10">
-            A quiz website that allows players to create mulitiplayer quiz sessions.
+            A quiz website that allows players to create multiplayer quiz sessions.
             Uses Supabase as the backend to handle realtime events and syncing state
-            between games.
+            between games. The code is on my github.
           </Project>
           <Project name={"aidanhopper.dev" as string}
                    link={"https://github.com/aidanhopper/aidanhopper.dev" as string}
