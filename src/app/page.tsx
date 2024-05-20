@@ -141,6 +141,14 @@ const Home = () => {
             Stores my configurations for all my machines in a single git repository
             built with NixOS and the Nix language.
           </Project>
+          <Project name={"Hoot" as string}
+                   link={"https://github.com/aidanhopper/hoot" as string}
+                   tags={"HTML,Tailwind,React,NextJS,Supabase" as string}
+                   className="mt-10">
+            A quiz website that allows players to create mulitiplayer quiz sessions.
+            Uses Supabase as the backend to handle realtime events and syncing state
+            between games.
+          </Project>
           <Project name={"aidanhopper.dev" as string}
                    link={"https://github.com/aidanhopper/aidanhopper.dev" as string}
                    tags={"HTML,Tailwind,React,NextJS" as string}
