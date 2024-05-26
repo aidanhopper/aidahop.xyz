@@ -149,7 +149,7 @@ const Home = () => {
             Uses Supabase as the backend to handle realtime events and syncing state
             between games. The code is on my github.
           </Project>
-          <Project name={"aidanhopper.dev" as string}
+          <Project name={"aidahop.xyz" as string}
                    link={"https://github.com/aidanhopper/aidanhopper.dev" as string}
                    tags={"HTML,Tailwind,React,NextJS" as string}
                    className="mt-10">
