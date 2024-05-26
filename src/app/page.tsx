@@ -141,8 +141,8 @@ const Home = () => {
             Stores my configurations for all my machines in a single git repository
             built with NixOS and the Nix language.
           </Project>
-          <Project name={"Hoot" as string}
-                   link={"https://hoot.aidahop.xyz" as string}
+          <Project name={"trivit.xyz" as string}
+                   link={"https://trivit.xyz" as string}
                    tags={"HTML,Tailwind,React,NextJS,Supabase" as string}
                    className="mt-10">
             A quiz website that allows players to create multiplayer quiz sessions.
